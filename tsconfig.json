@@ -1,0 +1,86 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": "src",
+    "paths": {
+      "$components/*": [
+        "components/*"
+      ],
+      "$assets/*": [
+        "assets/*"
+      ],
+      "$utils/*": [
+        "utils/*"
+      ],
+      "$constants/*": [
+        "constants/*"
+      ],
+      "$constants": [
+        "constants/index"
+      ],
+      "$config/*": [
+        "config/*"
+      ],
+      "$config": [
+        "config/index"
+      ],
+      "$types/*": [
+        "types/*"
+      ],
+      "$hooks/*": [
+        "hooks/*"
+      ],
+      "$contexts/*": [
+        "contexts/*"
+      ],
+      "$styles/*": [
+        "styles/*"
+      ]
+    },
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "types": [
+      "jest",
+      "react",
+      "@emotion/react/types/css-prop"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "jsxImportSource": "@emotion/react",
+    "incremental": true
+  },
+  "compileOnSave": true,
+  "files": [
+    "twin.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    "out"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js"
+  ]
+}
